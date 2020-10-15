@@ -7,14 +7,18 @@ Overview:
 * The folder 'Fixed' must be an exact copy of the Originals folder
 * The file shape_analysis.py is the Python script to analyze the otoliths
 * Getting accurate measurements of the otoliths requires a calibration value equal to the number of pixels representing 1mm in the images
-* CAUTION - running the script will overwrite the files 'original_files.csv' and 'OUTPUT.csv'
+* CAUTION - running the script will overwrite the file 'Results.xls'
 
-For the first time running the code on your computer, please read the documentation in OtolithScripts/README_MAC.txt to ensure you have the correct programs installed.
+For the first time running the code on your computer, please read the documentation in OtolithScripts/README.txt to ensure you have the correct programs installed.
 
 To run this program:
 1. Open 'shape_analysis.py' in a text editor to change the calibration value (called 'CAL') if necessary
-2. In Finder, navigate to the folder 'OtolithScripts'
-3. Right-click on the 'ShapeAnalysis' folder and click on 'New Terminal at Folder'
-4. Enter the following command: python3 shape_analysis.py
+2. In Finder (File Explorer for Windows), navigate to the folder 'OtolithScripts'
+3. For Mac users:
+    a. Right-click on the 'ShapeAnalysis' folder and click on 'New Terminal at Folder'
+    b. Enter the following command: python3 shape_analysis.py
+4. For Windows users:
+    a. Shift-right-click on the 'ShapeAnalysis' folder and select 'Open command window here'
+    b. Enter the following command: python3 shape_analysis.py
 5. The script creates a file called 'original_files.csv' listing all of the files in the 'Originals' folder
 6. Once the script has finished running, the file 'Results.csv' will contain the otolith measurements
